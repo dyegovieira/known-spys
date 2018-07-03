@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0935DCFA1EA81BDD00349652 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0935DCF91EA81BDD00349652 /* Enums.swift */; };
 		093C826A1EA7E617009CBC73 /* MockedWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093C82691EA7E617009CBC73 /* MockedWebServer.swift */; };
 		09837D8F1EA6643B00F2EE12 /* SecretDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09837D8E1EA6643B00F2EE12 /* SecretDetailsViewController.xib */; };
 		09837D911EA6791000F2EE12 /* SpyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09837D901EA6791000F2EE12 /* SpyDTO.swift */; };
@@ -39,10 +38,12 @@
 		7EB497BE1EB8016D001D9CDA /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497BD1EB8016D001D9CDA /* DetailPresenter.swift */; };
 		7EB497C21EB8F00B001D9CDA /* SecretDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497C11EB8F00B001D9CDA /* SecretDetailsPresenter.swift */; };
 		7EB497C41EB8F021001D9CDA /* SpyCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497C31EB8F021001D9CDA /* SpyCellPresenter.swift */; };
+		D1F3281320EBBE9E001A4B2E /* SpyListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */; };
+		D1F3281620EC13E4001A4B2E /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281520EC13E4001A4B2E /* Gender.swift */; };
+		D1F3281820EC13ED001A4B2E /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281720EC13ED001A4B2E /* Source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0935DCF91EA81BDD00349652 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		093C82691EA7E617009CBC73 /* MockedWebServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedWebServer.swift; sourceTree = "<group>"; };
 		09837D8E1EA6643B00F2EE12 /* SecretDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecretDetailsViewController.xib; sourceTree = "<group>"; };
 		09837D901EA6791000F2EE12 /* SpyDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyDTO.swift; sourceTree = "<group>"; };
@@ -78,6 +79,9 @@
 		7EB497C31EB8F021001D9CDA /* SpyCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyCellPresenter.swift; sourceTree = "<group>"; };
 		93008DB5112BB6ECABC1A530 /* Pods-KnownSpys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.debug.xcconfig"; sourceTree = "<group>"; };
 		C195FFDF15DCC517723B1A3C /* Pods-KnownSpys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.release.xcconfig"; sourceTree = "<group>"; };
+		D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyListDTO.swift; sourceTree = "<group>"; };
+		D1F3281520EC13E4001A4B2E /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		D1F3281720EC13ED001A4B2E /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				09837D901EA6791000F2EE12 /* SpyDTO.swift */,
+				D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */,
 			);
 			name = DTOs;
 			sourceTree = "<group>";
@@ -158,15 +163,15 @@
 		0993B3811EA53470005C9B6F /* KnownSpys */ = {
 			isa = PBXGroup;
 			children = (
-				7E42B5111EBA40EA00C4F957 /* NavigationCoordinators */,
-				7E4F6D4F1EB931EB0036A048 /* Dependencies */,
-				0993B3B21EA53F6A005C9B6F /* ModelLayer */,
-				0993B3AC1EA53D98005C9B6F /* UI */,
-				0993B3AB1EA53D8C005C9B6F /* Supporting Classes */,
 				0993B3821EA53470005C9B6F /* AppDelegate.swift */,
 				7E4F6D4B1EB929630036A048 /* Assets.xcassets */,
-				0993B3A51EA53D5A005C9B6F /* Main.storyboard */,
+				7E4F6D4F1EB931EB0036A048 /* Dependencies */,
 				0993B3B11EA53F47005C9B6F /* ignore */,
+				0993B3A51EA53D5A005C9B6F /* Main.storyboard */,
+				0993B3B21EA53F6A005C9B6F /* ModelLayer */,
+				7E42B5111EBA40EA00C4F957 /* NavigationCoordinators */,
+				0993B3AB1EA53D8C005C9B6F /* Supporting Classes */,
+				0993B3AC1EA53D98005C9B6F /* UI */,
 			);
 			path = KnownSpys;
 			sourceTree = "<group>";
@@ -203,12 +208,12 @@
 		0993B3B21EA53F6A005C9B6F /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
-				7E23BAB11EB9072600D06A5E /* Translation */,
-				0935DCF91EA81BDD00349652 /* Enums.swift */,
-				09837DB31EA6952900F2EE12 /* DTOs */,
 				09837DB21EA6951A00F2EE12 /* Database */,
-				09837DB11EA6951500F2EE12 /* Network */,
+				09837DB31EA6952900F2EE12 /* DTOs */,
+				D1F3281420EC13CC001A4B2E /* Enums */,
 				7E23BAAB1EB906AC00D06A5E /* ModelLayer.swift */,
+				09837DB11EA6951500F2EE12 /* Network */,
+				7E23BAB11EB9072600D06A5E /* Translation */,
 			);
 			name = ModelLayer;
 			sourceTree = "<group>";
@@ -293,6 +298,15 @@
 				C195FFDF15DCC517723B1A3C /* Pods-KnownSpys.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1F3281420EC13CC001A4B2E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D1F3281520EC13E4001A4B2E /* Gender.swift */,
+				D1F3281720EC13ED001A4B2E /* Source.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,7 +411,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/Outlaw/Outlaw.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -410,7 +423,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Outlaw.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -437,10 +449,12 @@
 				7E23BAAE1EB9070200D06A5E /* NetworkLayer.swift in Sources */,
 				0993B38B1EA53470005C9B6F /* KnownSpys.xcdatamodeld in Sources */,
 				7E23BAB31EB9074000D06A5E /* TranslationLayer.swift in Sources */,
+				D1F3281620EC13E4001A4B2E /* Gender.swift in Sources */,
 				09837DBA1EA6DBF500F2EE12 /* Spy+CoreDataProperties.swift in Sources */,
 				09837D911EA6791000F2EE12 /* SpyDTO.swift in Sources */,
 				09837DB91EA6DBF500F2EE12 /* Spy+CoreDataClass.swift in Sources */,
 				7E4F6D531EB931EB0036A048 /* SwinjectStoryboard+Extensions.swift in Sources */,
+				D1F3281320EBBE9E001A4B2E /* SpyListDTO.swift in Sources */,
 				0993B3B01EA53DB6005C9B6F /* RowType.swift in Sources */,
 				7E23BAB51EB908D400D06A5E /* SpyTranslator.swift in Sources */,
 				7E4F6D521EB931EB0036A048 /* DependencyRegistry.swift in Sources */,
@@ -453,9 +467,9 @@
 				7EB497C41EB8F021001D9CDA /* SpyCellPresenter.swift in Sources */,
 				7EB497C21EB8F00B001D9CDA /* SecretDetailsPresenter.swift in Sources */,
 				09BE71B51EA9280C001F6D6B /* Extensions.swift in Sources */,
+				D1F3281820EC13ED001A4B2E /* Source.swift in Sources */,
 				7EB497BC1EB7F7C6001D9CDA /* SpyListPresenter.swift in Sources */,
 				0993B3831EA53470005C9B6F /* AppDelegate.swift in Sources */,
-				0935DCFA1EA81BDD00349652 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

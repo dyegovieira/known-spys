@@ -9,7 +9,6 @@ target 'KnownSpys' do
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'RxDataSources'
-	pod 'Outlaw'
 	pod 'Toaster'
 	pod 'SwinjectStoryboard'
 end

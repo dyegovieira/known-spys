@@ -9,7 +9,6 @@
 import Foundation
 import Swifter
 import Alamofire
-import Outlaw
 
 class MockedWebServer {
     static let sharedInstance = MockedWebServer()

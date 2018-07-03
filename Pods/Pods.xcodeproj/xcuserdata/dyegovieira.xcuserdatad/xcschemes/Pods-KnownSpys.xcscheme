@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1223EFABA20F93A154C40DEF93C4C943"
+               BlueprintIdentifier = "9DE4816B12091056F89FA04AFED9D389"
                BuildableName = "Pods_KnownSpys.framework"
                BlueprintName = "Pods-KnownSpys"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1223EFABA20F93A154C40DEF93C4C943"
+            BlueprintIdentifier = "9DE4816B12091056F89FA04AFED9D389"
             BuildableName = "Pods_KnownSpys.framework"
             BlueprintName = "Pods-KnownSpys"
             ReferencedContainer = "container:Pods.xcodeproj">

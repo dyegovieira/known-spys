@@ -1,7 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
   - Differentiator (3.0.2)
-  - Outlaw (1.1.0)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxDataSources (3.0.2):
@@ -17,7 +16,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Outlaw
   - RxCocoa
   - RxDataSources
   - RxSwift
@@ -30,7 +28,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Differentiator
-    - Outlaw
     - RxCocoa
     - RxDataSources
     - RxSwift
@@ -42,7 +39,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  Outlaw: 00b32d73bee9a62b5150683f70c491d3307d999f
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
@@ -51,6 +47,6 @@ SPEC CHECKSUMS:
   SwinjectStoryboard: ad2529218a1504cc888040ee56c13d7cb1cc7998
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: db76619b68694315a6d2963a12a11c0aa8416676
+PODFILE CHECKSUM: bd091a1e238f5481489bf214d4e4895336472a1a
 
 COCOAPODS: 1.5.3

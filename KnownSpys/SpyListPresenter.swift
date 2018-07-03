@@ -65,7 +65,7 @@ extension SpyListPresenterImpl {
 //MARK: - Data Methods
 extension SpyListPresenterImpl {
     func makeSomeDataChange() {
-        let newSpy = SpyDTO(age: 23, name: "Adam Smith", gender: .male, password: "wealth", imageName: "AdamSmith", isIncognito: true)
+        let newSpy = SpyDTO(age: 23, name: "Adam Smith", gender: .male, password: "wealth", isIncognito: true, imageName: "AdamSmith")
         spies.value.insert(newSpy, at: 0)
     }
     

@@ -1,5 +1,5 @@
 import Foundation
-import Outlaw
+//import Outlaw
 
 private var numImagesPerGender = 6
 
@@ -8,40 +8,35 @@ struct SpyDTO {
     var name: String
     var gender: Gender
     var password: String
-    var imageName: String = ""
     var isIncognito: Bool
+    var imageName: String = ""
 }
 
-extension SpyDTO: Deserializable {
-    
-    init(object: Outlaw.Extractable) throws {
-        let genderString: String = try object.value(for: "gender")
 
-        gender = Gender(rawValue: genderString) ?? .female
+// MARK: - Decodable
+
+extension SpyDTO: Decodable {
+    enum CodingKeys: CodingKey {
+        case age, name, gender, password, isIncognito, imageName
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        age = try object.value(for: "age")
-        name = try object.value(for: "name")
-        password = try object.value(for: "password")
-        isIncognito = try object.value(for: "isIncognito")
+        age = try container.decode(Int.self, forKey: .age)
+        name = try container.decode(String.self, forKey: .name)
+        gender = try container.decode(Gender.self, forKey: .gender)
+        password = try container.decode(String.self, forKey: .password)
+        isIncognito = try container.decode(Bool.self, forKey: .isIncognito)
+
         imageName = randomImageName
     }
     
-    var randomImageName: String {
+    private var randomImageName: String {
         let imageIndex = Int(arc4random_uniform(UInt32(numImagesPerGender))) + 1
         let imageGender = gender == .female ? "F"
-                                            : "M"
-
+            : "M"
+        
         return String(format: "Spy%@%02d", imageGender, imageIndex)
-    }
-}
-
-extension SpyDTO: Serializable {
-    func serialized() -> [String: Any] {
-        return ["name": name,
-                "age": age,
-                "gender": gender,
-                "password": password,
-                "isIncognito": isIncognito,
-                "imageName": imageName]
     }
 }

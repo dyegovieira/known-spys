@@ -1,5 +1,4 @@
 import Foundation
-import Outlaw
 import CoreData
 
 protocol SpyTranslator {
@@ -18,8 +17,8 @@ class SpyTranslatorImpl: SpyTranslator {
                       name: spy.name,
                       gender: gender,
                       password: spy.password,
-                      imageName: spy.imageName,
-                      isIncognito: spy.isIncognito)
+                      isIncognito: spy.isIncognito,
+                      imageName: spy.imageName)
     }
     
     func translate(from dto: SpyDTO?, with context: NSManagedObjectContext) -> Spy? {
