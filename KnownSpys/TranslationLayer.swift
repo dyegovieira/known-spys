@@ -25,13 +25,13 @@ class TranslationLayerImpl: TranslationLayer {
     
     func toUnsavedCoreData(from dtos: [SpyDTO], with context: NSManagedObjectContext) -> [Spy] {
         print("convering DTOs to Core Data Objects")
-        let spies = dtos.flatMap{ dto in spyTranslator.translate(from: dto, with: context) } // keeping it simple by keeping things single threaded
+        let spies = dtos.compactMap{ dto in spyTranslator.translate(from: dto, with: context) } // keeping it simple by keeping things single threaded
         
         return spies
     }
     
     func toSpyDTOs(from spies:[Spy]) -> [SpyDTO] {
-        let dtos = spies.flatMap { spyTranslator.translate(from: $0) }
+        let dtos = spies.compactMap { spyTranslator.translate(from: $0) }
         
         return dtos
     }

@@ -118,7 +118,7 @@ extension SpyCell {
         NotificationCenter.default.addObserver(self, selector: #selector(userChangedTextSize(notification:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
     }
     
-    func userChangedTextSize(notification: NSNotification) {
+    @objc func userChangedTextSize(notification: NSNotification) {
         assignFonts()
     }
     

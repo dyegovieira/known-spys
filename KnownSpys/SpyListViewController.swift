@@ -15,7 +15,9 @@ class SpyListViewController: UIViewController, UITableViewDelegate {
     fileprivate var spyCellMaker: DependencyRegistry.SpyCellMaker!
     fileprivate var bag = DisposeBag()
     
-    fileprivate var dataSource = RxTableViewSectionedReloadDataSource<SpySection>()
+    fileprivate var dataSource = RxTableViewSectionedReloadDataSource<SpySection>(configureCell: {
+        _, _, _, _ in return UITableViewCell()
+    })
 
     func configure(with presenter: SpyListPresenter,
                    navigationCoordinator: NavigationCoordinator,
