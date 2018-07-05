@@ -35,6 +35,7 @@
 		7EB497C21EB8F00B001D9CDA /* SecretDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497C11EB8F00B001D9CDA /* SecretDetailsPresenter.swift */; };
 		7EB497C41EB8F021001D9CDA /* SpyCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497C31EB8F021001D9CDA /* SpyCellPresenter.swift */; };
 		D113F77820EE540500207095 /* RootNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113F77720EE540400207095 /* RootNavigationCoordinator.swift */; };
+		D113F77A20EE5F2900207095 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D113F77920EE5F2900207095 /* README.md */; };
 		D157E16720ECF69500549421 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D157E16620ECF69500549421 /* DetailViewController.xib */; };
 		D157E16920ECFBE500549421 /* SpyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D157E16820ECFBE500549421 /* SpyListViewController.xib */; };
 		D1F3281320EBBE9E001A4B2E /* SpyListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */; };
@@ -75,6 +76,7 @@
 		93008DB5112BB6ECABC1A530 /* Pods-KnownSpys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.debug.xcconfig"; sourceTree = "<group>"; };
 		C195FFDF15DCC517723B1A3C /* Pods-KnownSpys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.release.xcconfig"; sourceTree = "<group>"; };
 		D113F77720EE540400207095 /* RootNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationCoordinator.swift; sourceTree = "<group>"; };
+		D113F77920EE5F2900207095 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D157E16620ECF69500549421 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		D157E16820ECFBE500549421 /* SpyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpyListViewController.xib; sourceTree = "<group>"; };
 		D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyListDTO.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		0993B3761EA53470005C9B6F = {
 			isa = PBXGroup;
 			children = (
+				D113F77920EE5F2900207095 /* README.md */,
 				0993B3811EA53470005C9B6F /* KnownSpys */,
 				0993B3801EA53470005C9B6F /* Products */,
 				95D4D50D56216A175AEE5107 /* Pods */,
@@ -364,6 +367,7 @@
 				D157E16920ECFBE500549421 /* SpyListViewController.xib in Resources */,
 				0993B3901EA53470005C9B6F /* LaunchScreen.storyboard in Resources */,
 				D157E16720ECF69500549421 /* DetailViewController.xib in Resources */,
+				D113F77A20EE5F2900207095 /* README.md in Resources */,
 				09837D931EA6822100F2EE12 /* spies.json in Resources */,
 				7E4F6D4C1EB929630036A048 /* Assets.xcassets in Resources */,
 				0993B3B61EA55130005C9B6F /* SpyCell.xib in Resources */,
