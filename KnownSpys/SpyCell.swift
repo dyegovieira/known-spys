@@ -29,6 +29,7 @@ class SpyCell: UITableViewCell {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+
 }
 
 //MARK: adding images

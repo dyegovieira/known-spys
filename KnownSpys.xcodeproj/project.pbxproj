@@ -17,7 +17,6 @@
 		0993B38B1EA53470005C9B6F /* KnownSpys.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0993B3891EA53470005C9B6F /* KnownSpys.xcdatamodeld */; };
 		0993B3901EA53470005C9B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993B38E1EA53470005C9B6F /* LaunchScreen.storyboard */; };
 		0993B3A21EA53D3D005C9B6F /* SecretDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993B3A01EA53D3D005C9B6F /* SecretDetailsViewController.swift */; };
-		0993B3A81EA53D5A005C9B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993B3A51EA53D5A005C9B6F /* Main.storyboard */; };
 		0993B3A91EA53D5A005C9B6F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993B3A61EA53D5A005C9B6F /* DetailViewController.swift */; };
 		0993B3AA1EA53D5A005C9B6F /* SpyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993B3A71EA53D5A005C9B6F /* SpyListViewController.swift */; };
 		0993B3B01EA53DB6005C9B6F /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993B3AE1EA53DB6005C9B6F /* RowType.swift */; };
@@ -30,14 +29,14 @@
 		7E23BAB01EB9071000D06A5E /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23BAAF1EB9071000D06A5E /* DataLayer.swift */; };
 		7E23BAB31EB9074000D06A5E /* TranslationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23BAB21EB9074000D06A5E /* TranslationLayer.swift */; };
 		7E23BAB51EB908D400D06A5E /* SpyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E23BAB41EB908D400D06A5E /* SpyTranslator.swift */; };
-		7E42B5131EBA412200C4F957 /* RootNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42B5121EBA412200C4F957 /* RootNavigationCoordinator.swift */; };
 		7E4F6D4C1EB929630036A048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4F6D4B1EB929630036A048 /* Assets.xcassets */; };
-		7E4F6D521EB931EB0036A048 /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4F6D501EB931EB0036A048 /* DependencyRegistry.swift */; };
-		7E4F6D531EB931EB0036A048 /* SwinjectStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4F6D511EB931EB0036A048 /* SwinjectStoryboard+Extensions.swift */; };
 		7EB497BC1EB7F7C6001D9CDA /* SpyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497BB1EB7F7C6001D9CDA /* SpyListPresenter.swift */; };
 		7EB497BE1EB8016D001D9CDA /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497BD1EB8016D001D9CDA /* DetailPresenter.swift */; };
 		7EB497C21EB8F00B001D9CDA /* SecretDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497C11EB8F00B001D9CDA /* SecretDetailsPresenter.swift */; };
 		7EB497C41EB8F021001D9CDA /* SpyCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB497C31EB8F021001D9CDA /* SpyCellPresenter.swift */; };
+		D113F77820EE540500207095 /* RootNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113F77720EE540400207095 /* RootNavigationCoordinator.swift */; };
+		D157E16720ECF69500549421 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D157E16620ECF69500549421 /* DetailViewController.xib */; };
+		D157E16920ECFBE500549421 /* SpyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D157E16820ECFBE500549421 /* SpyListViewController.xib */; };
 		D1F3281320EBBE9E001A4B2E /* SpyListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */; };
 		D1F3281620EC13E4001A4B2E /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281520EC13E4001A4B2E /* Gender.swift */; };
 		D1F3281820EC13ED001A4B2E /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3281720EC13ED001A4B2E /* Source.swift */; };
@@ -56,7 +55,6 @@
 		0993B38F1EA53470005C9B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0993B3911EA53470005C9B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0993B3A01EA53D3D005C9B6F /* SecretDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretDetailsViewController.swift; sourceTree = "<group>"; };
-		0993B3A51EA53D5A005C9B6F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0993B3A61EA53D5A005C9B6F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0993B3A71EA53D5A005C9B6F /* SpyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyListViewController.swift; sourceTree = "<group>"; };
 		0993B3AE1EA53DB6005C9B6F /* RowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowType.swift; sourceTree = "<group>"; };
@@ -69,16 +67,16 @@
 		7E23BAAF1EB9071000D06A5E /* DataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
 		7E23BAB21EB9074000D06A5E /* TranslationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationLayer.swift; sourceTree = "<group>"; };
 		7E23BAB41EB908D400D06A5E /* SpyTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyTranslator.swift; sourceTree = "<group>"; };
-		7E42B5121EBA412200C4F957 /* RootNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootNavigationCoordinator.swift; path = Coordination/RootNavigationCoordinator.swift; sourceTree = "<group>"; };
 		7E4F6D4B1EB929630036A048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E4F6D501EB931EB0036A048 /* DependencyRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyRegistry.swift; sourceTree = "<group>"; };
-		7E4F6D511EB931EB0036A048 /* SwinjectStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		7EB497BB1EB7F7C6001D9CDA /* SpyListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyListPresenter.swift; sourceTree = "<group>"; };
 		7EB497BD1EB8016D001D9CDA /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		7EB497C11EB8F00B001D9CDA /* SecretDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretDetailsPresenter.swift; sourceTree = "<group>"; };
 		7EB497C31EB8F021001D9CDA /* SpyCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyCellPresenter.swift; sourceTree = "<group>"; };
 		93008DB5112BB6ECABC1A530 /* Pods-KnownSpys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.debug.xcconfig"; sourceTree = "<group>"; };
 		C195FFDF15DCC517723B1A3C /* Pods-KnownSpys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.release.xcconfig"; sourceTree = "<group>"; };
+		D113F77720EE540400207095 /* RootNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationCoordinator.swift; sourceTree = "<group>"; };
+		D157E16620ECF69500549421 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		D157E16820ECFBE500549421 /* SpyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpyListViewController.xib; sourceTree = "<group>"; };
 		D1F3281220EBBE9E001A4B2E /* SpyListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyListDTO.swift; sourceTree = "<group>"; };
 		D1F3281520EC13E4001A4B2E /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		D1F3281720EC13ED001A4B2E /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
@@ -96,16 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		094CE19D1EA7FB4C0056B653 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				09837DB71EA6DBF500F2EE12 /* Spy+CoreDataClass.swift */,
-				09837DB81EA6DBF500F2EE12 /* Spy+CoreDataProperties.swift */,
-				0993B3891EA53470005C9B6F /* KnownSpys.xcdatamodeld */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
 		094CE19E1EA7FB590056B653 /* MockedWebServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,15 +110,6 @@
 				7E23BAAD1EB9070200D06A5E /* NetworkLayer.swift */,
 			);
 			name = Network;
-			sourceTree = "<group>";
-		};
-		09837DB21EA6951A00F2EE12 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				094CE19D1EA7FB4C0056B653 /* CoreData */,
-				7E23BAAF1EB9071000D06A5E /* DataLayer.swift */,
-			);
-			name = Database;
 			sourceTree = "<group>";
 		};
 		09837DB31EA6952900F2EE12 /* DTOs */ = {
@@ -163,13 +142,9 @@
 		0993B3811EA53470005C9B6F /* KnownSpys */ = {
 			isa = PBXGroup;
 			children = (
-				0993B3821EA53470005C9B6F /* AppDelegate.swift */,
-				7E4F6D4B1EB929630036A048 /* Assets.xcassets */,
-				7E4F6D4F1EB931EB0036A048 /* Dependencies */,
-				0993B3B11EA53F47005C9B6F /* ignore */,
-				0993B3A51EA53D5A005C9B6F /* Main.storyboard */,
+				D1527C9C20ED54CF00C9544B /* App */,
+				7E42B5111EBA40EA00C4F957 /* Coordinators */,
 				0993B3B21EA53F6A005C9B6F /* ModelLayer */,
-				7E42B5111EBA40EA00C4F957 /* NavigationCoordinators */,
 				0993B3AB1EA53D8C005C9B6F /* Supporting Classes */,
 				0993B3AC1EA53D98005C9B6F /* UI */,
 			);
@@ -188,27 +163,18 @@
 		0993B3AC1EA53D98005C9B6F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				099DC1B31EAA79F90047AAB0 /* SpyList */,
 				09BE71B11EA926AD001F6D6B /* Details */,
 				09BE71B01EA92694001F6D6B /* SecretDetails */,
 				09BE71AF1EA9267F001F6D6B /* SpyCell */,
+				099DC1B31EAA79F90047AAB0 /* SpyList */,
 			);
 			name = UI;
-			sourceTree = "<group>";
-		};
-		0993B3B11EA53F47005C9B6F /* ignore */ = {
-			isa = PBXGroup;
-			children = (
-				0993B38E1EA53470005C9B6F /* LaunchScreen.storyboard */,
-				0993B3911EA53470005C9B6F /* Info.plist */,
-			);
-			name = ignore;
 			sourceTree = "<group>";
 		};
 		0993B3B21EA53F6A005C9B6F /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
-				09837DB21EA6951A00F2EE12 /* Database */,
+				D113F77520EE530600207095 /* Database */,
 				09837DB31EA6952900F2EE12 /* DTOs */,
 				D1F3281420EC13CC001A4B2E /* Enums */,
 				7E23BAAB1EB906AC00D06A5E /* ModelLayer.swift */,
@@ -221,8 +187,9 @@
 		099DC1B31EAA79F90047AAB0 /* SpyList */ = {
 			isa = PBXGroup;
 			children = (
-				0993B3A71EA53D5A005C9B6F /* SpyListViewController.swift */,
 				7EB497BB1EB7F7C6001D9CDA /* SpyListPresenter.swift */,
+				0993B3A71EA53D5A005C9B6F /* SpyListViewController.swift */,
+				D157E16820ECFBE500549421 /* SpyListViewController.xib */,
 			);
 			name = SpyList;
 			sourceTree = "<group>";
@@ -252,6 +219,7 @@
 			children = (
 				0993B3A61EA53D5A005C9B6F /* DetailViewController.swift */,
 				7EB497BD1EB8016D001D9CDA /* DetailPresenter.swift */,
+				D157E16620ECF69500549421 /* DetailViewController.xib */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -265,22 +233,12 @@
 			name = Translation;
 			sourceTree = "<group>";
 		};
-		7E42B5111EBA40EA00C4F957 /* NavigationCoordinators */ = {
+		7E42B5111EBA40EA00C4F957 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				7E42B5121EBA412200C4F957 /* RootNavigationCoordinator.swift */,
+				D113F77720EE540400207095 /* RootNavigationCoordinator.swift */,
 			);
-			name = NavigationCoordinators;
-			sourceTree = "<group>";
-		};
-		7E4F6D4F1EB931EB0036A048 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				7E4F6D501EB931EB0036A048 /* DependencyRegistry.swift */,
-				7E4F6D511EB931EB0036A048 /* SwinjectStoryboard+Extensions.swift */,
-			);
-			name = Dependencies;
-			path = Injection;
+			name = Coordinators;
 			sourceTree = "<group>";
 		};
 		7F5EDADF8906101E9B116D2C /* Frameworks */ = {
@@ -298,6 +256,36 @@
 				C195FFDF15DCC517723B1A3C /* Pods-KnownSpys.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D113F77520EE530600207095 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7E23BAAF1EB9071000D06A5E /* DataLayer.swift */,
+				D113F77620EE530E00207095 /* CoreData */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		D113F77620EE530E00207095 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				09837DB71EA6DBF500F2EE12 /* Spy+CoreDataClass.swift */,
+				09837DB81EA6DBF500F2EE12 /* Spy+CoreDataProperties.swift */,
+				0993B3891EA53470005C9B6F /* KnownSpys.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		D1527C9C20ED54CF00C9544B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0993B3821EA53470005C9B6F /* AppDelegate.swift */,
+				7E4F6D4B1EB929630036A048 /* Assets.xcassets */,
+				0993B38E1EA53470005C9B6F /* LaunchScreen.storyboard */,
+				0993B3911EA53470005C9B6F /* Info.plist */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 		D1F3281420EC13CC001A4B2E /* Enums */ = {
@@ -373,9 +361,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				09837D8F1EA6643B00F2EE12 /* SecretDetailsViewController.xib in Resources */,
+				D157E16920ECFBE500549421 /* SpyListViewController.xib in Resources */,
 				0993B3901EA53470005C9B6F /* LaunchScreen.storyboard in Resources */,
+				D157E16720ECF69500549421 /* DetailViewController.xib in Resources */,
 				09837D931EA6822100F2EE12 /* spies.json in Resources */,
-				0993B3A81EA53D5A005C9B6F /* Main.storyboard in Resources */,
 				7E4F6D4C1EB929630036A048 /* Assets.xcassets in Resources */,
 				0993B3B61EA55130005C9B6F /* SpyCell.xib in Resources */,
 			);
@@ -415,8 +404,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swifter/Swifter.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -427,8 +414,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swifter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,15 +438,13 @@
 				09837DBA1EA6DBF500F2EE12 /* Spy+CoreDataProperties.swift in Sources */,
 				09837D911EA6791000F2EE12 /* SpyDTO.swift in Sources */,
 				09837DB91EA6DBF500F2EE12 /* Spy+CoreDataClass.swift in Sources */,
-				7E4F6D531EB931EB0036A048 /* SwinjectStoryboard+Extensions.swift in Sources */,
 				D1F3281320EBBE9E001A4B2E /* SpyListDTO.swift in Sources */,
 				0993B3B01EA53DB6005C9B6F /* RowType.swift in Sources */,
 				7E23BAB51EB908D400D06A5E /* SpyTranslator.swift in Sources */,
-				7E4F6D521EB931EB0036A048 /* DependencyRegistry.swift in Sources */,
 				0993B3AA1EA53D5A005C9B6F /* SpyListViewController.swift in Sources */,
 				093C826A1EA7E617009CBC73 /* MockedWebServer.swift in Sources */,
 				7EB497BE1EB8016D001D9CDA /* DetailPresenter.swift in Sources */,
-				7E42B5131EBA412200C4F957 /* RootNavigationCoordinator.swift in Sources */,
+				D113F77820EE540500207095 /* RootNavigationCoordinator.swift in Sources */,
 				0993B3B51EA55130005C9B6F /* SpyCell.swift in Sources */,
 				0993B3A21EA53D3D005C9B6F /* SecretDetailsViewController.swift in Sources */,
 				7EB497C41EB8F021001D9CDA /* SpyCellPresenter.swift in Sources */,

@@ -12,6 +12,17 @@ class DetailViewController: UIViewController {
     fileprivate weak var navigationCoordinator: NavigationCoordinator?
 
     
+    init(with presenter: DetailPresenter, navigationCoordinator: NavigationCoordinator) {
+        self.presenter = presenter
+        self.navigationCoordinator = navigationCoordinator
+        
+        super.init(nibName: "DetailViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -24,14 +35,7 @@ class DetailViewController: UIViewController {
             navigationCoordinator?.movingBack()
         }
     }
-    
-    func configure(with presenter: DetailPresenter,
-            navigationCoordinator: NavigationCoordinator)
-    {
-        self.presenter = presenter
-        self.navigationCoordinator = navigationCoordinator
-    }
-    
+
     func setupView() {
         profileImage.image = UIImage(named: presenter.imageName)
         nameLabel.text = presenter.name

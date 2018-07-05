@@ -9,6 +9,8 @@
 import UIKit
 
 protocol NavigationCoordinator: class {
+    init(with modelLayer: ModelLayer, in window: UIWindow?)
+    
     func next(arguments: Dictionary<String, Any>?)
     func movingBack()
 }
@@ -22,14 +24,18 @@ enum NavigationState {
 
 class RootNavigationCoordinatorImpl: NavigationCoordinator {
     
-    var registry: DependencyRegistry
-    var rootViewController: UIViewController
-
+    private var navigationController: UINavigationController
+    private var modelLayer: ModelLayer
+    
     var navState: NavigationState = .atSpyList
     
-    init(with rootViewController: UIViewController, registry: DependencyRegistry) {
-        self.rootViewController = rootViewController
-        self.registry = registry
+    required init(with modelLayer: ModelLayer, in window: UIWindow?) {
+        self.modelLayer = modelLayer
+        navigationController = UINavigationController()
+        navigationController.viewControllers = []
+        window?.rootViewController = navigationController
+        
+        showSpyList()
     }
     
     func movingBack() {
@@ -58,27 +64,41 @@ class RootNavigationCoordinatorImpl: NavigationCoordinator {
         }
     }
     
+    func showSpyList() {
+        if navigationController.viewControllers.count > 0 {
+            navigationController.popToRootViewController(animated: true)
+            return
+        }
+        
+        let presenter = SpyListPresenterImpl(modelLayer: modelLayer)
+        let listViewController = SpyListViewController(with: presenter, navigationCoordinator: self)
+        
+        navigationController.viewControllers = [listViewController]
+        navState = .atSpyList
+    }
+    
     func showDetails(arguments: Dictionary<String, Any>?) {
+        if navState == .atSpyDetails {
+            return
+        }
+        
         guard let spy = arguments?["spy"] as? SpyDTO else { notifyNilArguments(); return }
         
-        let detailViewController = registry.makeDetailViewController(with: spy)
+        let presenter = DetailPresenterImpl(with: spy)
+        let detailViewController = DetailViewController(with: presenter, navigationCoordinator: self)
         
-        rootViewController.navigationController?.pushViewController(detailViewController, animated: true)
+        navigationController.pushViewController(detailViewController, animated: true)
         navState = .atSpyDetails
     }
     
     func showSecretDetails(arguments: Dictionary<String, Any>?) {
         guard let spy = arguments?["spy"] as? SpyDTO else { notifyNilArguments(); return }
 
-        let detailViewController = registry.makeSecretDetailsViewController(with: spy)
+        let presenter = SecretDetailsPresenterImpl(with: spy)
+        let secretDetailViewController = SecretDetailsViewController(with: presenter, navigationCoordinator: self)
         
-        rootViewController.navigationController?.pushViewController(detailViewController, animated: true)
+        navigationController.pushViewController(secretDetailViewController, animated: true)
         navState = .atSecretDetails
-    }
-    
-    func showSpyList() {
-        rootViewController.navigationController?.popToRootViewController(animated: true)
-        navState = .atSpyList
     }
     
     func notifyNilArguments() {

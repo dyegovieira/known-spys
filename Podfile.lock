@@ -9,9 +9,6 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
   - Swifter (1.4.1)
-  - Swinject (2.4.1)
-  - SwinjectStoryboard (2.0.1):
-    - Swinject (~> 2.4)
   - Toaster (2.1.1)
 
 DEPENDENCIES:
@@ -20,8 +17,6 @@ DEPENDENCIES:
   - RxDataSources
   - RxSwift
   - Swifter
-  - Swinject
-  - SwinjectStoryboard
   - Toaster
 
 SPEC REPOS:
@@ -32,8 +27,6 @@ SPEC REPOS:
     - RxDataSources
     - RxSwift
     - Swifter
-    - Swinject
-    - SwinjectStoryboard
     - Toaster
 
 SPEC CHECKSUMS:
@@ -43,10 +36,8 @@ SPEC CHECKSUMS:
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   Swifter: 62d14781d34600ffb6be99d350cf271be500600f
-  Swinject: f7f15a9672e99328c1f07f277091087917215700
-  SwinjectStoryboard: ad2529218a1504cc888040ee56c13d7cb1cc7998
   Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
 
-PODFILE CHECKSUM: bd091a1e238f5481489bf214d4e4895336472a1a
+PODFILE CHECKSUM: 2c973126481275a96058ab1d6c8dac76e6db5a90
 
 COCOAPODS: 1.5.3

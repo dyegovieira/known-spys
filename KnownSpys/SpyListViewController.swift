@@ -12,24 +12,31 @@ class SpyListViewController: UIViewController, UITableViewDelegate {
     weak var navigationCoordinator: NavigationCoordinator?
     
     fileprivate var presenter: SpyListPresenter!
-    fileprivate var spyCellMaker: DependencyRegistry.SpyCellMaker!
     fileprivate var bag = DisposeBag()
     
     fileprivate var dataSource = RxTableViewSectionedReloadDataSource<SpySection>(configureCell: {
         _, _, _, _ in return UITableViewCell()
     })
 
-    func configure(with presenter: SpyListPresenter,
-                   navigationCoordinator: NavigationCoordinator,
-                   spyCellMaker: @escaping DependencyRegistry.SpyCellMaker)
-    {
+    init(with presenter: SpyListPresenter, navigationCoordinator: NavigationCoordinator) {
         self.presenter = presenter
         self.navigationCoordinator = navigationCoordinator
-        self.spyCellMaker = spyCellMaker
+        
+        super.init(nibName: "SpyListViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.setRightBarButton(
+            UIBarButtonItem(barButtonSystemItem: .refresh,
+                            target: self,
+                            action: #selector(SpyListViewController.updateData(_:))),
+            animated: true)
         
         SpyCell.register(with: tableView)
         
@@ -55,7 +62,9 @@ class SpyListViewController: UIViewController, UITableViewDelegate {
 extension SpyListViewController {
     func initDataSource() {
         dataSource.configureCell = { _, tableView, indexPath, spy in
-            let cell = self.spyCellMaker(tableView, indexPath, spy)
+            let cellPresenter = SpyCellPresenterImpl(with: spy)
+            let cell = SpyCell.dequeue(from: tableView, for: indexPath, with: cellPresenter)
+            
             return cell
         }
         
